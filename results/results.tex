@@ -1,0 +1,39 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}         & Apparent Temperature (C) & \textbf{  R-squared:         } &      0.435   \\
+\textbf{Model:}                 &           OLS            & \textbf{  Adj. R-squared:    } &      0.435   \\
+\textbf{Method:}                &      Least Squares       & \textbf{  F-statistic:       } &  1.484e+04   \\
+\textbf{Date:}                  &     Wed, 22 May 2024     & \textbf{  Prob (F-statistic):} &      0.00    \\
+\textbf{Time:}                  &         16:42:11         & \textbf{  Log-Likelihood:    } & -3.3793e+05  \\
+\textbf{No. Observations:}      &           96453          & \textbf{  AIC:               } &  6.759e+05   \\
+\textbf{Df Residuals:}          &           96447          & \textbf{  BIC:               } &  6.759e+05   \\
+\textbf{Df Model:}              &               5          & \textbf{                     } &              \\
+\textbf{Covariance Type:}       &        nonrobust         & \textbf{                     } &              \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{const}                  &      33.6745  &        0.273     &   123.419  &         0.000        &       33.140    &       34.209     \\
+\textbf{Humidity}               &     -31.7824  &        0.146     &  -218.105  &         0.000        &      -32.068    &      -31.497     \\
+\textbf{Wind Speed (km/h)}      &      -0.3272  &        0.004     &   -84.530  &         0.000        &       -0.335    &       -0.320     \\
+\textbf{Wind Bearing (degrees)} &       0.0042  &        0.000     &    17.339  &         0.000        &        0.004    &        0.005     \\
+\textbf{Visibility (km)}        &       0.4789  &        0.007     &    71.789  &         0.000        &        0.466    &        0.492     \\
+\textbf{Pressure (millibars)}   &      -0.0017  &        0.000     &    -7.494  &         0.000        &       -0.002    &       -0.001     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 3839.175 & \textbf{  Durbin-Watson:     } &    0.080  \\
+\textbf{Prob(Omnibus):} &   0.000  & \textbf{  Jarque-Bera (JB):  } & 4364.217  \\
+\textbf{Skew:}          &  -0.491  & \textbf{  Prob(JB):          } &     0.00  \\
+\textbf{Kurtosis:}      &   3.350  & \textbf{  Cond. No.          } & 1.13e+04  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors assume that the covariance matrix of the errors is correctly specified. \newline
+ [2] The condition number is large, 1.13e+04. This might indicate that there are \newline
+ strong multicollinearity or other numerical problems.
