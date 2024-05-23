@@ -23,3 +23,6 @@ docker run --rm -v $(pwd)/results:/results $IMAGE_NAME
 
 # Notify completion
 echo "Container run completed. Check results/* for files"
+
+# Tear down image to save space
+docker rmi $(docker images | grep $IMAGE_NAME)
