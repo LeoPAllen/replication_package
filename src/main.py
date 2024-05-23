@@ -30,7 +30,7 @@ def do_simple_analysis():
 
     return summary
 
-# Save the summary to a .tex file
+# For example, save a regression output summary to a .tex file
 if __name__ == '__main__':
     with open('/results/results.tex', 'w') as f:
         summary = do_simple_analysis()
