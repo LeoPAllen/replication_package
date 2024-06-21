@@ -1,0 +1,22 @@
+# project/docker-compose.yml
+version: '3.8'
+# to add or remove a service add a new directory with appropriate Dockerfile and script
+services:
+  r:
+    build:
+      context: ./r
+    volumes:
+      - ./data:/app/data
+    command: ["Rscript", "script.R"]
+
+  python:
+    build:
+      context: ./python
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    command: ["python", "/app/src/main.py"]
+    # assuming the tasks should run in series:
+    depends_on:
+      r:
+        condition: service_completed_successfully
