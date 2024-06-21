@@ -1,6 +1,6 @@
 # project/docker-compose.yml
 version: '3.8'
-# to add or remove a service add a new directory with appropriate Dockerfile and script
+# to add or remove a service, add a new service block here and add a new directory with desired Dockerfile and script(s)
 services:
   r:
     build:
